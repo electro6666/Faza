@@ -13,6 +13,8 @@ print(25*"-")
 print(f"{Y}[ !! ] This tool only for Education purpose{W}")
 time.sleep(2)
 print(f"{R}[ !! ]  Faza terminal configuration started{W}")
+time.sleep(3)
+print(f"{R}[ ! ] Download rockyou.txt and put in [ files/brute ]{W}")
 print(25*"-")
 time.sleep(2)
 #----
