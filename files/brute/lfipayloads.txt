@@ -1,0 +1,13 @@
+/etc/passwd
+/proc/version
+/proc/self/environ
+/etc/hosts/etc/shadow
+/etc/group
+/etc/mysql/my.conf
+/etc/issue
+/logs/error.log
+/logs/access.log
+/logs/error_log
+/logs/access_log
+/var/log/apache/access.log
+/var/log/apache2/access.log
