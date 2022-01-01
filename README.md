@@ -1,5 +1,5 @@
 # Faza terminal
-![CHEESE!]("faza.jpg")
+![CHEESE!](faza.jpg)
 -  simple  tool for pen testers
 - Use small letter only for commands
 - Don't use space after command
@@ -11,5 +11,5 @@
 - python faza.py
 
 # Tools
-![CHEESE!]("toolimg.jpg")
+![CHEESE!](toolimg.jpg)
 
