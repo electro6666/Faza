@@ -7,6 +7,7 @@
 
 # Installation
 - git clone https://github.com/Ag3ntQ/Faza.git
+- cd faza
 - python fazaconfig.py [ at first time ]
 - python faza.py
 
