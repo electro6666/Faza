@@ -2,6 +2,9 @@ import os
 import time
 from shutil import which
 
+os.system("rm -r faza.jpg")
+os.system("rm -r toolimg.jpg")
+
 B = "\033[34m"    # Blue
 Y = "\033[33m"    # Yellow
 G = "\033[32m"    # Green
