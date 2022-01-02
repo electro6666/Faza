@@ -21,6 +21,9 @@ print(f"{R}[ ! ] Download rockyou.txt and put in [ files/brute ]{W}")
 print(25*"-")
 time.sleep(2)
 #----
+os.system("chmod +x faza")
+os.system("mv faza ../usr/bin")
+#----
 def install(name):
 	os.system(f"pkg install {name}")
 	time.sleep(1)
