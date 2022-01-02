@@ -63,7 +63,7 @@ def attacks():
 def te_cmd():  # Faza terminal default commamds
     print(f"\n{Y}  ───[ Terminal commands ]───{G}")
     print("[ 1 ] clear      [ Clear terminal ]")
-    print("[ 2 ] restart    [ Restart termnal ]")
+    print("[ 2 ] start      [ Restart termnal ]")
     print("[ 3 ] exit       [ Close terminal ]")
     print("[ 4 ] <cmd> --os [ for exicute linux commands]")
 
