@@ -43,7 +43,7 @@ def subdomain():
 def folder():
  print(Y)
  os.system("figlet Dir brute")
- inp=input(f"{B}[#] Enter Domain : {W}")
+ inp=input(f"{B}[#] Enter Url : {W}")
  file_name=input(f"{B}[#] Enter file name : {W}")
  print(25*"=")
  files=open(f"files/brute/{file_name}")
