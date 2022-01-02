@@ -57,8 +57,8 @@ while True:
        	print(f"[+] Error : <{inp}>")	
    elif inp =="help":
        helpfaza()
-   elif inp=="whoami":
-   	print(f"{R}Irfankpm")
+
+
    elif inp == "my ip":
      try:
       myip()
