@@ -22,7 +22,7 @@ print(25*"-")
 time.sleep(2)
 #----
 os.system("chmod +x faza")
-os.system("mv faza ../usr/bin")
+os.system("mv faza /data/data/com.termux/files/usr/bin")
 #----
 def install(name):
 	os.system(f"pkg install {name}")
@@ -65,6 +65,7 @@ print(25*"-")
 print(f"{G}[ • ] Finished")
 print(25*"-")
 
+#---
 
 
  
