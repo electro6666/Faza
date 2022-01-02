@@ -63,6 +63,7 @@ except:
 
 print(25*"-")
 print(f"{G}[ • ] Finished")
+print(f"{G}[ !! ] type 'faza' for run Faza from anywhere on termux{W}")
 print(25*"-")
 
 #---
