@@ -2,6 +2,8 @@ import os
 import time
 from shutil import which
 
+os.system("clear")
+
 os.system("rm -r faza.jpg")
 os.system("rm -r toolimg.jpg")
 
@@ -11,11 +13,14 @@ G = "\033[32m"    # Green
 W = "\033[0m"     # White
 R = "\033[31m"    # Red
 C = "\033[36m"    # Cyan
-
+print(f"{G}======> {Y}Faza Terminal")
+print("")
+print("")
+time.sleep(2)
 print(25*"-")
 print(f"{Y}[ !! ] This tool only for Education purpose{W}")
 time.sleep(2)
-print(f"{R}[ !! ]  Faza terminal configuration started{W}")
+print(f"{R}[ !! ] Configuration started{W}")
 time.sleep(3)
 print(f"{R}[ ! ] Download rockyou.txt and put in [ files/brute ]{W}")
 print(25*"-")
