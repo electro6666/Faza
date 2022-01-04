@@ -22,7 +22,7 @@ print(25*"-")
 time.sleep(2)
 #----
 os.system("chmod +x faza")
-prin("{G}[ + ] permission granted for 'faza'")
+print("{G}[ + ] permission granted for 'faza'")
 time.sleep(2)
 print(f"{C}[ + ] Move 'faza' {R}(Not faza.py ){C} to bin for run 'faza terminal' from any directory{W}")
 time.sleep(3)
