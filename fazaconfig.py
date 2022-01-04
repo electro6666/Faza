@@ -22,7 +22,10 @@ print(25*"-")
 time.sleep(2)
 #----
 os.system("chmod +x faza")
-os.system("mv faza /data/data/com.termux/files/usr/bin")
+prin("{G}[ + ] permission granted for 'faza'")
+time.sleep(2)
+print(f"{C}[ + ] Move 'faza' {R}(Not faza.py ){C} to bin for run 'faza terminal' from any directory{W}")
+time.sleep(3)
 #----
 def install(name):
 	os.system(f"pkg install {name}")
@@ -62,8 +65,8 @@ except:
  pip("googlesearch-python")
 
 print(25*"-")
-print(f"{G}[ • ] Finished")
-print(f"{G}[ !! ] type 'faza' for run Faza from anywhere on termux{W}")
+print(f"{G}=======> Completed ")
+print(f"{G}[ !! ] type 'faza' for run faza from any directory{W}")
 print(25*"-")
 
 #---
