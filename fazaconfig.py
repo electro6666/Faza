@@ -13,21 +13,20 @@ G = "\033[32m"    # Green
 W = "\033[0m"     # White
 R = "\033[31m"    # Red
 C = "\033[36m"    # Cyan
-print(f"{G}======> {Y}Faza Terminal")
+print("")
+print(f"{G}   {Y}Faza Terminal")
 print("")
 print("")
 time.sleep(2)
-print(25*"-")
 print(f"{Y}[ !! ] This tool only for Education purpose{W}")
 time.sleep(2)
 print(f"{R}[ !! ] Configuration started{W}")
 time.sleep(3)
 print(f"{R}[ ! ] Download rockyou.txt and put in [ files/brute ]{W}")
-print(25*"-")
 time.sleep(2)
 #----
 os.system("chmod +x faza")
-print("{G}[ + ] permission granted for 'faza'")
+print(f"{G}[ + ] permission granted for 'faza'")
 time.sleep(2)
 print(f"{C}[ + ] Move 'faza' {R}(Not faza.py ){C} to bin for run 'faza terminal' from any directory{W}")
 time.sleep(3)
@@ -69,10 +68,11 @@ try:
 except:
  pip("googlesearch-python")
 
-print(25*"-")
-print(f"{G}=======> Completed ")
+
+os.system("clear")
+print(f"{G}[ + ] Completed ")
 print(f"{G}[ !! ] type 'faza' for run faza from any directory{W}")
-print(25*"-")
+
 
 #---
 
