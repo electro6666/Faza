@@ -14,5 +14,5 @@
 # Tools
 ![CHEESE!](toolimg.jpg)
 
-# you can run faza with command 'faza' in termux 
+# you can run faza with command 'faza' 
 
